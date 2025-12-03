@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="国家专利申报全流程服务 - 专业团队，高效服务，助力企业知识产权保护">
+    <title>国家专利申报全流程服务 - 长沙悦安</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-blue': '#1e3a8a',
+                        'brand-orange': '#ef4444',
+                        'brand-light-blue': '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- 顶部导航栏 -->
+    <nav class="w-full bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <!-- 左侧 Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="flex items-center">
+                        <i class="fas fa-shield-alt text-blue-600 text-3xl mr-2"></i>
+                        <span class="text-2xl font-bold text-gray-800">长沙<span class="text-blue-600">悦安</span></span>
+                    </a>
+                </div>
+                
+                <!-- 中间导航链接 -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium relative">
+                        高新企业认定
+                        <span class="absolute -top-1 -right-2 bg-red-600 text-white text-[10px] px-1 rounded" style="font-size: 8px;">HOT</span>
+                    </a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium relative">
+                        专精特新认定
+                        <span class="absolute -top-1 -right-2 bg-red-600 text-white text-[10px] px-1 rounded" style="font-size: 8px;">HOT</span>
+                    </a>
+                    <a href="#advantages" class="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium relative">
+                        算法备案
+                        <span class="absolute -top-1 -right-2 bg-red-600 text-white text-[10px] px-1 rounded" style="font-size: 8px;">HOT</span>
+                    </a>
+                    <a href="#solutions" class="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium">新技术新产品</a>
+                    <a href="#evaluation" class="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium">双软评估</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium">企业资质办理</a>
+                </div>
+                
+                <!-- 右侧咨询电话 -->
+                <div class="flex items-center space-x-4">
+                    <div class="hidden lg:flex items-center">
+                        <i class="fas fa-phone-alt text-blue-600 mr-2"></i>
+                        <span class="text-gray-600 text-sm mr-1">咨询热线:</span>
+                        <a href="tel:400-872-8735" class="text-blue-600 font-bold text-lg hover:text-blue-700 transition">400-872-8735</a>
+                    </div>
+                    <button class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition-all duration-300">
+                        免费咨询
+                    </button>
+                    <!-- 移动端菜单按钮 -->
+                    <button class="md:hidden text-gray-700 hover:text-blue-600" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 移动端菜单 -->
+            <div id="mobileMenu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium py-2 flex items-center">
+                        高新企业认定
+                        <span class="ml-2 bg-red-600 text-white text-[10px] px-1 rounded" style="font-size: 10px;">HOT</span>
+                    </a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium py-2 flex items-center">
+                        专精特新认定
+                        <span class="ml-2 bg-red-600 text-white text-[10px] px-1 rounded" style="font-size: 10px;">HOT</span>
+                    </a>
+                    <a href="#advantages" class="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium py-2 flex items-center">
+                        算法备案
+                        <span class="ml-2 bg-red-600 text-white text-[10px] px-1 rounded" style="font-size: 10px;">HOT</span>
+                    </a>
+                    <a href="#solutions" class="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium py-2">新技术新产品</a>
+                    <a href="#evaluation" class="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium py-2">双软评估</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium py-2">企业资质办理</a>
+                    <div class="flex items-center py-2 border-t border-gray-200 mt-2">
+                        <i class="fas fa-phone-alt text-blue-600 mr-2"></i>
+                        <a href="tel:400-872-8735" class="text-blue-600 font-bold text-lg">400-872-8735</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. 顶部横幅区 -->
+    <header class="w-full bg-gradient-to-r from-blue-900 to-blue-800 py-20">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+            <div class="lg:w-3/5 text-white mb-8 lg:mb-0">
+                <h1 class="text-5xl font-bold mb-4 leading-tight">
+                    国家专利申报<span class="text-orange-500">全流程服务</span>
+                </h1>
+                <p class="text-blue-200 text-sm mb-8 leading-relaxed">
+                    专业团队，高效服务，助力企业知识产权保护<br>
+                    一站式解决方案，从申请到维护，全程无忧
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button class="px-6 py-3 bg-red-500 text-white rounded hover:bg-red-600 transition-all duration-300 hover:scale-105">
+                        立即咨询
+                    </button>
+                    <button class="px-6 py-3 border-2 border-white text-white rounded hover:bg-white hover:text-blue-900 transition-all duration-300">
+                        了解更多详情
+                    </button>
+                </div>
+            </div>
+            <div class="lg:w-2/5 flex justify-center">
+                <div class="w-96 h-64 bg-gradient-to-br from-blue-600 to-blue-400 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-laptop-code text-white text-9xl opacity-30"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. 专利服务分类区 -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold text-gray-800 mb-2">专利服务分类服务</h2>
+                <p class="text-gray-500 text-sm">为您提供全方位的知识产权服务解决方案</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- 服务卡片 1 -->
+                <article class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">发明专利加急</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                        加快审查进度，缩短授权周期，快速获得专利保护，抢占市场先机
+                    </p>
+                    <button class="w-full py-2 bg-red-500 text-white rounded hover:bg-red-600 transition">
+                        立即办理
+                    </button>
+                </article>
+                
+                <!-- 服务卡片 2 -->
+                <article class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">实用新型专利</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                        审查周期短，授权快，适合产品改进和结构创新，性价比高
+                    </p>
+                    <button class="w-full py-2 bg-red-500 text-white rounded hover:bg-red-600 transition">
+                        立即办理
+                    </button>
+                </article>
+                
+                <!-- 服务卡片 3 -->
+                <article class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">外观设计专利</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                        保护产品外观，防止抄袭模仿，提升品牌形象和市场竞争力
+                    </p>
+                    <button class="w-full py-2 bg-red-500 text-white rounded hover:bg-red-600 transition">
+                        立即办理
+                    </button>
+                </article>
+                
+                <!-- 服务卡片 4 -->
+                <article class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">软件著作权</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                        保护软件源代码，申请高新企业必备，享受税收优惠政策
+                    </p>
+                    <button class="w-full py-2 bg-red-500 text-white rounded hover:bg-red-600 transition">
+                        立即办理
+                    </button>
+                </article>
+                
+                <!-- 服务卡片 5 -->
+                <article class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">版权登记</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                        保护原创作品，维护合法权益，文字、美术、音乐等作品均可登记
+                    </p>
+                    <button class="w-full py-2 bg-red-500 text-white rounded hover:bg-red-600 transition">
+                        立即办理
+                    </button>
+                </article>
+                
+                <!-- 服务卡片 6 -->
+                <article class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">商标注册代理</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                        专业商标注册服务，品牌保护第一步，提高注册成功率
+                    </p>
+                    <button class="w-full py-2 bg-red-500 text-white rounded hover:bg-red-600 transition">
+                        立即办理
+                    </button>
+                </article>
+                
+                <!-- 服务卡片 7 -->
+                <article class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">知识产权贯标</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                        建立知识产权管理体系，提升企业核心竞争力，符合国家认证标准
+                    </p>
+                    <button class="w-full py-2 bg-red-500 text-white rounded hover:bg-red-600 transition">
+                        立即办理
+                    </button>
+                </article>
+                
+                <!-- 服务卡片 8 -->
+                <article class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">知识产权诉讼</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                        专业法务团队，维护合法权益，处理侵权纠纷，保护企业利益
+                    </p>
+                    <button class="w-full py-2 bg-red-500 text-white rounded hover:bg-red-600 transition">
+                        立即办理
+                    </button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 促销横幅区 -->
+    <section class="my-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="bg-gradient-to-r from-blue-900 via-purple-900 to-blue-900 rounded-lg py-12 px-8 relative overflow-hidden">
+                <div class="absolute left-10 top-1/2 transform -translate-y-1/2 opacity-20">
+                    <i class="fas fa-lightbulb text-yellow-300 text-8xl"></i>
+                </div>
+                <div class="absolute right-10 top-1/2 transform -translate-y-1/2 opacity-20">
+                    <i class="fas fa-rocket text-yellow-300 text-8xl"></i>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-white text-center relative z-10">
+                    一个<span class="text-orange-500">好创意</span>，就可能是申请专利！
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 全程服务展示区 -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold text-gray-800 mb-2">
+                    知识产权全程服务——<span class="text-blue-500">全面服务伴企业成长</span>
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
+                <!-- 商标服务 -->
+                <article class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-trademark text-blue-500 text-5xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">商标服务</h3>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>商标注册</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>商标变更</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>商标续展</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>商标转让</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>商标许可备案</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>商标驳回复审</span>
+                        </li>
+                    </ul>
+                </article>
+                
+                <!-- 专利服务 -->
+                <article class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-lightbulb text-blue-500 text-5xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">专利服务</h3>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>发明专利申请</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>实用新型</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>外观设计</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>专利著录变更</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>专利实施许可</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>专利年费代缴</span>
+                        </li>
+                    </ul>
+                </article>
+                
+                <!-- 版权登记服务 -->
+                <article class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-copyright text-blue-500 text-5xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">版权登记服务</h3>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>美术作品</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>文字作品</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>软件著作权</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>影视作品</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>音乐作品</span>
+                        </li>
+                    </ul>
+                </article>
+                
+                <!-- 项目申报 -->
+                <article class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-file-alt text-blue-500 text-5xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">项目申报</h3>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>高新技术企业认定</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>科技型中小企业</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>专利试点示范企业</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>国际科技合作基地</span>
+                        </li>
+                    </ul>
+                </article>
+                
+                <!-- 法律诉讼服务 -->
+                <article class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-gavel text-blue-500 text-5xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">法律诉讼服务</h3>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>商标侵权诉讼</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>专利侵权诉讼</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>著作权侵权诉讼</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>不正当竞争诉讼</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 mr-2">•</span>
+                            <span>商业秘密诉讼</span>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 核心优势区 -->
+    <section id="advantages" class="py-16 bg-gray-900 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 left-10 w-32 h-32 border-2 border-blue-500 rounded-full"></div>
+            <div class="absolute bottom-20 right-20 w-48 h-48 border-2 border-blue-500 rounded-full"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold text-white mb-2">
+                    我们的<span class="text-blue-500">核心</span>业务优势
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 优势 1 -->
+                <article class="bg-gray-800 bg-opacity-50 border-l-4 border-blue-500 rounded-lg p-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-tasks text-blue-500 text-3xl mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">多类知识产权的代理申报</h3>
+                            <p class="text-gray-400 text-sm">资深团队全程代理，高效完成申报流程</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- 优势 2 -->
+                <article class="bg-gray-800 bg-opacity-50 border-l-4 border-blue-500 rounded-lg p-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-shield-alt text-blue-500 text-3xl mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">网络维权与行政维权服务</h3>
+                            <p class="text-gray-400 text-sm">专业法务团队，提供全方位维权支持</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- 优势 3 -->
+                <article class="bg-gray-800 bg-opacity-50 border-l-4 border-blue-500 rounded-lg p-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-briefcase text-blue-500 text-3xl mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">来源于企业的实战经验</h3>
+                            <p class="text-gray-400 text-sm">深入了解企业需求，提供针对性解决方案</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- 优势 4 -->
+                <article class="bg-gray-800 bg-opacity-50 border-l-4 border-blue-500 rounded-lg p-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-dollar-sign text-blue-500 text-3xl mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">清晰的收费标准</h3>
+                            <p class="text-gray-400 text-sm">流程透明，费用明确，无隐性收费</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- 优势 5 -->
+                <article class="bg-gray-800 bg-opacity-50 border-l-4 border-blue-500 rounded-lg p-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-bolt text-blue-500 text-3xl mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">快速响应</h3>
+                            <p class="text-gray-400 text-sm">7×24小时在线服务，及时响应客户需求</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- 优势 6 -->
+                <article class="bg-gray-800 bg-opacity-50 border-l-4 border-blue-500 rounded-lg p-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-hands-helping text-blue-500 text-3xl mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">一站式服务</h3>
+                            <p class="text-gray-400 text-sm">从申请到维护，提供全生命周期服务</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. 常见问题区 -->
+    <section class="py-16 bg-gradient-to-b from-yellow-50 to-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold text-gray-800 mb-2">
+                    为您解决<span class="text-blue-500">10大</span>疑惑
+                </h2>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-10">
+                <!-- 左侧插图 -->
+                <div class="lg:w-2/5 flex justify-center items-center">
+                    <div class="w-full max-w-md">
+                        <img src="https://source.unsplash.com/500x400/?business,document" alt="知识产权咨询" class="rounded-lg shadow-lg">
+                    </div>
+                </div>
+                
+                <!-- 右侧问题列表 -->
+                <div class="lg:w-3/5">
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-3">1</span>
+                            <p class="text-gray-800 pt-1">发明和<span class="text-blue-500 font-semibold">实用新型专利</span>有什么区别？</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-3">2</span>
+                            <p class="text-gray-800 pt-1"><span class="text-orange-500 font-semibold">专利申请</span>需要提供哪些材料？</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-3">3</span>
+                            <p class="text-gray-800 pt-1">外观专利申请需要提交<span class="text-blue-500 font-semibold">几张图片</span>？</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-3">4</span>
+                            <p class="text-gray-800 pt-1">专利申请需要<span class="text-orange-500 font-semibold">多长时间</span>？</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-3">5</span>
+                            <p class="text-gray-800 pt-1">专利被<span class="text-blue-500 font-semibold">驳回</span>怎么办？</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-3">6</span>
+                            <p class="text-gray-800 pt-1">发明专利可以<span class="text-orange-500 font-semibold">加快审查速度</span>吗？</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-3">7</span>
+                            <p class="text-gray-800 pt-1">什么是发明专利<span class="text-blue-500 font-semibold">实质审查</span>？</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-3">8</span>
+                            <p class="text-gray-800 pt-1">专利申请后<span class="text-orange-500 font-semibold">多久会公开</span>？</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-3">9</span>
+                            <p class="text-gray-800 pt-1">发明公布后如何发现<span class="text-blue-500 font-semibold">侵权</span>？</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <button class="px-6 py-3 bg-red-500 text-white rounded hover:bg-red-600 transition">
+                            立即咨询
+                        </button>
+                        <button class="px-6 py-3 border-2 border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">
+                            了解更多详情
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. 专业优势区 -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold text-gray-800 mb-2">
+                    优质服务，专属<span class="text-blue-500">数字</span>平台
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- 专家 1 -->
+                <article class="text-center">
+                    <div class="mb-4">
+                        <img src="https://source.unsplash.com/200x200/?portrait,professional,man" alt="知识产权顾问" class="w-20 h-20 rounded-full mx-auto object-cover">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">李明</h3>
+                    <p class="text-blue-500 text-sm mb-2">高级知识产权顾问</p>
+                    <p class="text-gray-600 text-sm mb-3">10年从业经验，擅长商标注册和品牌保护策略</p>
+                    <div class="border-t border-gray-200 pt-3">
+                        <p class="text-gray-500 text-xs">专业：商标注册专家</p>
+                    </div>
+                </article>
+                
+                <!-- 专家 2 -->
+                <article class="text-center">
+                    <div class="mb-4">
+                        <img src="https://source.unsplash.com/200x200/?portrait,professional,woman" alt="专利代理师" class="w-20 h-20 rounded-full mx-auto object-cover">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">王芳</h3>
+                    <p class="text-blue-500 text-sm mb-2">专利代理师</p>
+                    <p class="text-gray-600 text-sm mb-3">专注发明专利申请，成功案例300+</p>
+                    <div class="border-t border-gray-200 pt-3">
+                        <p class="text-gray-500 text-xs">专业：发明专利申请</p>
+                    </div>
+                </article>
+                
+                <!-- 专家 3 -->
+                <article class="text-center">
+                    <div class="mb-4">
+                        <img src="https://source.unsplash.com/200x200/?portrait,professional,male" alt="法律顾问" class="w-20 h-20 rounded-full mx-auto object-cover">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">张伟</h3>
+                    <p class="text-blue-500 text-sm mb-2">法律顾问</p>
+                    <p class="text-gray-600 text-sm mb-3">专业处理知识产权诉讼，胜诉率95%</p>
+                    <div class="border-t border-gray-200 pt-3">
+                        <p class="text-gray-500 text-xs">专业：知识产权诉讼</p>
+                    </div>
+                </article>
+                
+                <!-- 专家 4 -->
+                <article class="text-center">
+                    <div class="mb-4">
+                        <img src="https://source.unsplash.com/200x200/?portrait,professional,female" alt="项目申报专家" class="w-20 h-20 rounded-full mx-auto object-cover">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-1">刘静</h3>
+                    <p class="text-blue-500 text-sm mb-2">项目申报专家</p>
+                    <p class="text-gray-600 text-sm mb-3">高新企业认定通过率98%，经验丰富</p>
+                    <div class="border-t border-gray-200 pt-3">
+                        <p class="text-gray-500 text-xs">专业：高新企业认定</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. 服务流程区 -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold text-gray-800 mb-2">提供服务</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                <!-- 流程 1 -->
+                <article class="text-center">
+                    <div class="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-search text-blue-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">技术挖掘</h3>
+                    <p class="text-gray-600 text-sm">深入挖掘技术创新点</p>
+                </article>
+                
+                <!-- 流程 2 -->
+                <article class="text-center">
+                    <div class="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-file-text text-blue-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">材料准备</h3>
+                    <p class="text-gray-600 text-sm">协助整理申请材料</p>
+                </article>
+                
+                <!-- 流程 3 -->
+                <article class="text-center">
+                    <div class="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-blue-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">律师审核</h3>
+                    <p class="text-gray-600 text-sm">专业律师审核把关</p>
+                </article>
+                
+                <!-- 流程 4 -->
+                <article class="text-center">
+                    <div class="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-upload text-blue-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">递交申请</h3>
+                    <p class="text-gray-600 text-sm">快速递交至相关部门</p>
+                </article>
+                
+                <!-- 流程 5 -->
+                <article class="text-center">
+                    <div class="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-list text-blue-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">进度查询</h3>
+                    <p class="text-gray-600 text-sm">实时跟踪申请进度</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. 行业解决方案区 -->
+    <section id="solutions" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold text-gray-800 mb-2">
+                    精选行业<span class="text-blue-500">知识产权</span>解决方案
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                <!-- 方案 1 -->
+                <article class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://source.unsplash.com/400x250/?food" alt="食品行业" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">食品行业方案</h3>
+                        <p class="text-gray-600 text-sm mb-4">食品专利、商标保护方案，确保配方和品牌安全</p>
+                        <button class="w-full py-2 bg-red-500 text-white rounded hover:bg-red-600 transition">
+                            立即咨询
+                        </button>
+                    </div>
+                </article>
+                
+                <!-- 方案 2 -->
+                <article class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://source.unsplash.com/400x250/?medical" alt="医疗医药" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">医疗医药方案</h3>
+                        <p class="text-gray-600 text-sm mb-4">医药专利、临床试验保护，全面保障医药创新</p>
+                        <button class="w-full py-2 bg-red-500 text-white rounded hover:bg-red-600 transition">
+                            立即咨询
+                        </button>
+                    </div>
+                </article>
+                
+                <!-- 方案 3 -->
+                <article class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://source.unsplash.com/400x250/?cosmetics" alt="化妆品行业" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">化妆品行业</h3>
+                        <p class="text-gray-600 text-sm mb-4">配方专利、品牌商标保护，打造独特竞争优势</p>
+                        <button class="w-full py-2 bg-red-500 text-white rounded hover:bg-red-600 transition">
+                            立即咨询
+                        </button>
+                    </div>
+                </article>
+                
+                <!-- 方案 4 -->
+                <article class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://source.unsplash.com/400x250/?technology,hardware" alt="智能硬件" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">智能硬件行业</h3>
+                        <p class="text-gray-600 text-sm mb-4">外观专利、技术专利保护，防止产品被模仿</p>
+                        <button class="w-full py-2 bg-red-500 text-white rounded hover:bg-red-600 transition">
+                            立即咨询
+                        </button>
+                    </div>
+                </article>
+                
+                <!-- 方案 5 -->
+                <article class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://source.unsplash.com/400x250/?internet,technology" alt="互联网行业" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">互联网行业</h3>
+                        <p class="text-gray-600 text-sm mb-4">软件著作权、商业模式保护，守护创新成果</p>
+                        <button class="w-full py-2 bg-red-500 text-white rounded hover:bg-red-600 transition">
+                            立即咨询
+                        </button>
+                    </div>
+                </article>
+                
+                <!-- 方案 6 -->
+                <article class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://source.unsplash.com/400x250/?manufacturing" alt="智能制造" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">智能制造行业</h3>
+                        <p class="text-gray-600 text-sm mb-4">发明专利、工艺保护，提升制造业核心竞争力</p>
+                        <button class="w-full py-2 bg-red-500 text-white rounded hover:bg-red-600 transition">
+                            立即咨询
+                        </button>
+                    </div>
+                </article>
+                
+                <!-- 方案 7 -->
+                <article class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://source.unsplash.com/400x250/?energy,solar" alt="新能源行业" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">新能源行业</h3>
+                        <p class="text-gray-600 text-sm mb-4">技术专利、标准制定，引领行业技术发展</p>
+                        <button class="w-full py-2 bg-red-500 text-white rounded hover:bg-red-600 transition">
+                            立即咨询
+                        </button>
+                    </div>
+                </article>
+                
+                <!-- 方案 8 -->
+                <article class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="https://source.unsplash.com/400x250/?biology,science" alt="生物科技" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">生物科技行业</h3>
+                        <p class="text-gray-600 text-sm mb-4">生物专利、技术转化，加速科研成果商业化</p>
+                        <button class="w-full py-2 bg-red-500 text-white rounded hover:bg-red-600 transition">
+                            立即咨询
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. 资质证书区 -->
+    <section class="py-16 bg-gradient-to-b from-pink-50 to-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold text-gray-800 mb-2">执业许可证</h2>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-amber-50 border-8 border-yellow-600 rounded-lg shadow-2xl p-10">
+                    <div class="border-4 border-yellow-700 p-8">
+                        <h3 class="text-2xl font-bold text-center text-gray-800 mb-6" style="font-family: 'KaiTi', serif;">
+                            中华人民共和国专利代理机构执业许可证
+                        </h3>
+                        <div class="space-y-4 text-gray-700">
+                            <p class="text-center text-lg">
+                                <span class="font-semibold">机构名称：</span>长沙悦安知识产权代理有限公司
+                            </p>
+                            <p class="text-center">
+                                <span class="font-semibold">许可证编号：</span>No. 43001
+                            </p>
+                            <p class="text-center">
+                                <span class="font-semibold">经营范围：</span>专利代理、商标代理、版权代理
+                            </p>
+                            <p class="text-center">
+                                <span class="font-semibold">有效期限：</span>长期有效
+                            </p>
+                            <div class="mt-8 flex justify-between items-end">
+                                <div class="text-sm">
+                                    <p>发证日期：2020年1月1日</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-24 h-24 border-2 border-red-600 rounded-full flex items-center justify-center">
+                                        <p class="text-red-600 text-xs font-bold">国家知识产权局</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. 合作方式区 -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 方式 1 -->
+                <article class="border border-gray-200 rounded-lg p-8 hover:shadow-lg transition">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-box text-blue-500 text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">包装整改</h3>
+                    <p class="text-gray-600 text-center leading-relaxed">
+                        提供全面的知识产权包装整改服务，助力企业合规发展，提升品牌价值
+                    </p>
+                </article>
+                
+                <!-- 方式 2 -->
+                <article class="border border-gray-200 rounded-lg p-8 hover:shadow-lg transition">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-building text-blue-500 text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">知识产权体系建设</h3>
+                    <p class="text-gray-600 text-center leading-relaxed">
+                        建立完善的知识产权管理体系，提升企业核心竞争力，构建知识产权护城河
+                    </p>
+                </article>
+                
+                <!-- 方式 3 -->
+                <article class="border border-gray-200 rounded-lg p-8 hover:shadow-lg transition">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-cloud text-blue-500 text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">亿慧云</h3>
+                    <p class="text-gray-600 text-center leading-relaxed">
+                        数字化知识产权管理平台，实时监控和管理企业知识产权资产，智能化运营
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. 合作伙伴区 -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold text-gray-800 mb-2">我们的合作伙伴</h2>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-5">
+                <!-- 合作伙伴 Logo 占位 -->
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">腾讯</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">阿里巴巴</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">百度</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">京东</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">美团</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">字节跳动</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">小米</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">华为</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">vivo</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">OPPO</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">北京大学</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">清华大学</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">复旦大学</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">浙江大学</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">中国科学院</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">中兴通讯</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">海尔集团</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">格力电器</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">比亚迪</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">宁德时代</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">蔚来汽车</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">理想汽车</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">小鹏汽车</span>
+                </div>
+                <div class="bg-white border border-gray-200 rounded p-5 flex items-center justify-center h-24 hover:shadow-md transition">
+                    <span class="text-gray-600 font-semibold text-sm">网易</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. 底部横幅区 -->
+    <footer id="about" class="w-full h-80 relative overflow-hidden">
+        <img src="https://source.unsplash.com/1920x400/?city,night" alt="城市夜景" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-10 h-full flex items-center justify-center">
+            <h2 class="text-6xl font-bold text-white" style="font-family: 'KaiTi', serif;">用心负荷</h2>
+        </div>
+    </footer>
+
+    <!-- 移动端菜单切换脚本 -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+
+</body>
+</html>
