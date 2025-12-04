@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex items-center justify-between h-16">
         <!-- 左侧 Logo -->
-        <div class="flex-shrink-0">
+        <div class="flex-shrink-0 mr-6 lg:mr-8 xl:mr-12">
           <router-link to="/" class="flex items-center">
             <i class="fas fa-shield-alt text-blue-600 text-3xl mr-2"></i>
             <span class="text-2xl font-bold text-gray-800">长沙<span class="text-blue-600">悦安</span></span>
@@ -17,7 +17,7 @@
             class="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium relative"
             :class="{ 'text-blue-600': $route.path === '/' }"
           >
-            高新企业认定
+            {{ t('nav.home') }}
             <span class="absolute -top-1 -right-2 bg-red-600 text-white text-[7px] px-1 rounded" style="font-size: 7px;">HOT</span>
           </router-link>
           <router-link 
@@ -25,7 +25,7 @@
             class="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium relative"
             :class="{ 'text-blue-600': $route.path === '/specialized-enterprise' }"
           >
-            专精特新认定
+            {{ t('nav.specialized') }}
             <span class="absolute -top-1 -right-2 bg-red-600 text-white text-[7px] px-1 rounded" style="font-size: 7px;">HOT</span>
           </router-link>
           <router-link 
@@ -33,7 +33,7 @@
             class="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium relative"
             :class="{ 'text-blue-600': $route.path === '/algorithm-filing' }"
           >
-            算法备案
+            {{ t('nav.algorithm') }}
             <span class="absolute -top-1 -right-2 bg-red-600 text-white text-[7px] px-1 rounded" style="font-size: 7px;">HOT</span>
           </router-link>
           <router-link 
@@ -41,34 +41,32 @@
             class="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
             :class="{ 'text-blue-600': $route.path === '/new-tech-product' }"
           >
-            新技术新产品
+            {{ t('nav.newTech') }}
           </router-link>
           <router-link 
             to="/double-soft-evaluation" 
             class="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
             :class="{ 'text-blue-600': $route.path === '/double-soft-evaluation' }"
           >
-            双软评估
+            {{ t('nav.doubleSoft') }}
           </router-link>
           <router-link 
             to="/qualification-handling" 
             class="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
             :class="{ 'text-blue-600': $route.path === '/qualification-handling' }"
           >
-            企业资质办理
+            {{ t('nav.qualification') }}
           </router-link>
         </div>
         
-        <!-- 右侧咨询电话 -->
-        <div class="flex items-center space-x-4">
-          <div class="hidden lg:flex items-center">
-            <i class="fas fa-phone-alt text-blue-600 mr-2"></i>
-            <span class="text-gray-600 text-sm mr-1">咨询热线:</span>
-            <a href="tel:400-872-8735" class="text-blue-600 font-bold text-lg hover:text-blue-700 transition">400-872-8735</a>
-          </div>
-          <button class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition-all duration-300">
-            免费咨询
+        <!-- 右侧咨询电话和按钮 -->
+        <div class="flex items-center space-x-2">
+          
+          <!-- 免费咨询按钮 -->
+          <button class="px-5 py-2 bg-red-500 text-white text-sm font-semibold rounded shadow-sm hover:bg-red-600 hover:shadow transition-all duration-300 whitespace-nowrap">
+            {{ t('common.consult') }}
           </button>
+          
           <!-- 移动端菜单按钮 -->
           <button class="md:hidden text-gray-700 hover:text-blue-600" @click="toggleMobileMenu">
             <i class="fas fa-bars text-2xl"></i>
@@ -136,7 +134,9 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 
+const { t } = useI18n()
 const mobileMenuOpen = ref(false)
 
 const toggleMobileMenu = () => {

@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
+import i18n from './locales/index'
 
 // 导入页面组件
 import HighTechEnterprise from './views/HighTechEnterprise.vue'
@@ -16,37 +17,37 @@ const routes = [
     path: '/',
     name: 'HighTechEnterprise',
     component: HighTechEnterprise,
-    meta: { title: '高新企业认定' }
+    meta: { titleKey: 'nav.home' }
   },
   {
     path: '/specialized-enterprise',
     name: 'SpecializedEnterprise',
     component: SpecializedEnterprise,
-    meta: { title: '专精特新认定' }
+    meta: { titleKey: 'nav.specialized' }
   },
   {
     path: '/algorithm-filing',
     name: 'AlgorithmFiling',
     component: AlgorithmFiling,
-    meta: { title: '算法备案' }
+    meta: { titleKey: 'nav.algorithm' }
   },
   {
     path: '/new-tech-product',
     name: 'NewTechProduct',
     component: NewTechProduct,
-    meta: { title: '新技术新产品' }
+    meta: { titleKey: 'nav.newTech' }
   },
   {
     path: '/double-soft-evaluation',
     name: 'DoubleSoftEvaluation',
     component: DoubleSoftEvaluation,
-    meta: { title: '双软评估' }
+    meta: { titleKey: 'nav.doubleSoft' }
   },
   {
     path: '/qualification-handling',
     name: 'QualificationHandling',
     component: QualificationHandling,
-    meta: { title: '企业资质办理' }
+    meta: { titleKey: 'nav.qualification' }
   }
 ]
 
@@ -62,12 +63,24 @@ const router = createRouter({
   }
 })
 
-// 路由守卫：更新页面标题
+const app = createApp(App)
+app.use(router)
+app.use(i18n)
+
+// 路由守卫：更新页面标题（支持国际化）
 router.beforeEach((to, from, next) => {
-  document.title = to.meta.title ? `${to.meta.title} - 长沙悦安` : '长沙悦安知识产权服务'
+  const locale = i18n.global.locale.value
+  const companyName = locale === 'en-US' ? 'Changsha Yuean' : '长沙悦安'
+  
+  if (to.meta.titleKey) {
+    const pageTitle = i18n.global.t(to.meta.titleKey)
+    document.title = `${pageTitle} - ${companyName}`
+  } else {
+    document.title = locale === 'en-US' 
+      ? 'Changsha Yuean Intellectual Property Services'
+      : '长沙悦安知识产权服务'
+  }
   next()
 })
 
-const app = createApp(App)
-app.use(router)
 app.mount('#app')

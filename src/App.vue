@@ -3,6 +3,9 @@
     <!-- 顶部导航栏 -->
     <Navbar />
     
+    <!-- 语言切换按钮 -->
+    <LanguageSwitcher />
+    
     <!-- 路由视图 -->
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
@@ -22,6 +25,7 @@
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
 import CustomerService from './components/CustomerService.vue'
+import LanguageSwitcher from './components/LanguageSwitcher.vue'
 </script>
 
 <style>

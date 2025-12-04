@@ -7,23 +7,23 @@
         <div class="text-center mb-4">
           <p class="text-cyan-400 text-sm">
             <i class="fas fa-star mr-2"></i>
-            高新技术企业认定、提供优质服务、树立诚信口碑
+            {{ t('highTech.banner.tagline') }}
           </p>
         </div>
         <div class="text-center mb-12">
           <h1 class="text-6xl font-bold text-white mb-6">
-            国高新企业<span class="text-orange-500">思路认证</span>
+            {{ t('highTech.banner.title') }}<span class="text-orange-500">{{ t('highTech.banner.titleHighlight') }}</span>
           </h1>
-          <p class="text-white text-lg mb-2">让申请成为流程化落地，为企业投入降低成本费</p>
-          <p class="text-cyan-300 text-sm">申请时间大幅缩短 | 评审专业实力强 | 前期配合度高 | 推进效率性强 | 认证性价比高</p>
+          <p class="text-white text-lg mb-2">{{ t('highTech.banner.subtitle1') }}</p>
+          <p class="text-cyan-300 text-sm">{{ t('highTech.banner.subtitle2') }}</p>
         </div>
         <div class="flex justify-center gap-6">
           <button class="px-12 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white text-lg font-bold rounded hover:from-orange-600 hover:to-red-600 transition-all duration-300">
-            立即咨询 >>
+            {{ t('highTech.banner.consultBtn') }}
           </button>
-          <a href="tel:400-872-8735" class="px-12 py-4 bg-cyan-400 text-white text-lg font-bold rounded hover:bg-cyan-500 transition-all duration-300 flex items-center">
+          <a :href="`tel:${t('highTech.banner.phone')}`" class="px-12 py-4 bg-cyan-400 text-white text-lg font-bold rounded hover:bg-cyan-500 transition-all duration-300 flex items-center">
             <i class="fas fa-phone-alt mr-2"></i>
-            400-872-8735
+            {{ t('highTech.banner.phone') }}
           </a>
         </div>
       </div>
@@ -35,25 +35,25 @@
         <div class="text-center mb-12">
           <h2 class="text-4xl font-bold text-gray-800 mb-3 flex items-center justify-center">
             <span class="w-24 h-0.5 bg-gray-800 mr-4"></span>
-            高新认证相关服务
+            {{ t('highTech.services.title') }}
             <span class="w-24 h-0.5 bg-gray-800 ml-4"></span>
           </h2>
-          <p class="text-gray-600">高新相关业务，长沙悦安多对1，竭诚为您服务</p>
+          <p class="text-gray-600">{{ t('highTech.services.subtitle') }}</p>
         </div>
 
         <!-- 服务卡片网格 (2行4列) -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <article v-for="service in relatedServices" :key="service.title" class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+          <article v-for="service in currentServices" :key="service.title" class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
             <div class="p-6">
               <h3 class="text-xl font-bold text-gray-800 mb-3">{{ service.title }}</h3>
               <p class="text-gray-600 text-sm leading-relaxed mb-6 min-h-[80px]">{{ service.desc }}</p>
             </div>
             <div class="grid grid-cols-2 border-t">
               <button class="py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold hover:from-orange-600 hover:to-red-600 transition">
-                咨询客服
+                {{ t('highTech.services.consultBtn') }}
               </button>
-              <a href="tel:400-872-8735" class="py-3 border-l border-white bg-white text-orange-500 font-bold hover:bg-gray-50 transition flex items-center justify-center">
-                400-872-8735
+              <a :href="`tel:${t('highTech.banner.phone')}`" class="py-3 border-l border-white bg-white text-orange-500 font-bold hover:bg-gray-50 transition flex items-center justify-center">
+                {{ t('highTech.banner.phone') }}
               </a>
             </div>
           </article>
@@ -67,7 +67,7 @@
         <div class="text-center mb-12">
           <h2 class="text-4xl font-bold text-gray-800 mb-3 flex items-center justify-center">
             <span class="w-24 h-0.5 bg-gray-800 mr-4"></span>
-            高新申请条件
+            {{ t('highTech.conditions.title') }}
             <span class="w-24 h-0.5 bg-gray-800 ml-4"></span>
           </h2>
         </div>
@@ -75,7 +75,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <!-- 左侧条件列表 -->
           <div class="space-y-6">
-            <div v-for="(condition, index) in applicationConditions" :key="index" class="flex items-start gap-4">
+            <div v-for="(condition, index) in currentConditions" :key="index" class="flex items-start gap-4">
               <div class="bg-cyan-400 text-white w-12 h-12 rounded flex items-center justify-center flex-shrink-0 transform rotate-45">
                 <span class="transform -rotate-45 font-bold">◆</span>
               </div>
@@ -95,11 +95,11 @@
 
         <div class="flex justify-center gap-6 mt-16">
           <button class="px-16 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white text-lg font-bold rounded-full hover:from-orange-600 hover:to-red-600 transition-all duration-300 shadow-lg">
-            申请条件咨询 >>
+            {{ t('highTech.conditions.consultBtn') }}
           </button>
-          <a href="tel:400-872-8735" class="px-16 py-4 bg-cyan-400 text-white text-lg font-bold rounded-full hover:bg-cyan-500 transition-all duration-300 flex items-center shadow-lg">
+          <a :href="`tel:${t('highTech.banner.phone')}`" class="px-16 py-4 bg-cyan-400 text-white text-lg font-bold rounded-full hover:bg-cyan-500 transition-all duration-300 flex items-center shadow-lg">
             <i class="fas fa-phone-alt mr-3"></i>
-            400-872-8735
+            {{ t('highTech.banner.phone') }}
           </a>
         </div>
       </div>
@@ -110,13 +110,13 @@
       <div class="max-w-7xl mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-4xl font-bold text-gray-800 mb-4" style="color: #8B4513;">
-            协助企业申领奖励补贴
+            {{ t('highTech.subsidies.title') }}
           </h2>
-          <p class="text-gray-600">全程协助,实时政策解读,提升企业申领成功率</p>
+          <p class="text-gray-600">{{ t('highTech.subsidies.subtitle') }}</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <article v-for="subsidy in subsidyPrograms" :key="subsidy.title" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300" style="background: repeating-linear-gradient(45deg, #ffffff, #ffffff 10px, #f9f9f9 10px, #f9f9f9 20px);">
+          <article v-for="subsidy in currentSubsidies" :key="subsidy.title" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300" style="background: repeating-linear-gradient(45deg, #ffffff, #ffffff 10px, #f9f9f9 10px, #f9f9f9 20px);">
             <div class="p-6 text-center">
               <!-- 大图标和标题 -->
               <div class="mb-4">
@@ -138,7 +138,7 @@
               <div class="border-t-2 border-gray-300 my-4"></div>
               
               <div class="text-left space-y-2 mb-6">
-                <p class="text-cyan-500 font-bold text-sm mb-2">申领条件:</p>
+                <p class="text-cyan-500 font-bold text-sm mb-2">{{ t('highTech.subsidies.conditionsLabel') }}</p>
                 <ul class="text-gray-600 text-sm space-y-1">
                   <li v-for="item in subsidy.conditions" :key="item" class="flex items-start">
                     <span class="mr-2">□</span>
@@ -149,7 +149,7 @@
               
               <div class="border-t-2 border-gray-300 my-4"></div>
               
-              <p class="text-sm text-gray-600 mb-2">奖补额:</p>
+              <p class="text-sm text-gray-600 mb-2">{{ t('highTech.subsidies.amountLabel') }}</p>
               <p class="text-red-500 font-bold text-2xl">{{ subsidy.amount }}</p>
             </div>
           </article>
@@ -157,11 +157,11 @@
 
         <div class="flex justify-center gap-6">
           <button class="px-16 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white text-lg font-bold rounded-full hover:from-orange-600 hover:to-red-600 transition-all duration-300 shadow-lg">
-            申请条件咨询 >>
+            {{ t('highTech.subsidies.consultBtn') }}
           </button>
-          <a href="tel:400-872-8735" class="px-16 py-4 bg-cyan-400 text-white text-lg font-bold rounded-full hover:bg-cyan-500 transition-all duration-300 flex items-center shadow-lg">
+          <a :href="`tel:${t('highTech.banner.phone')}`" class="px-16 py-4 bg-cyan-400 text-white text-lg font-bold rounded-full hover:bg-cyan-500 transition-all duration-300 flex items-center shadow-lg">
             <i class="fas fa-phone-alt mr-3"></i>
-            400-872-8735
+            {{ t('highTech.banner.phone') }}
           </a>
         </div>
       </div>
@@ -173,10 +173,10 @@
         <div class="text-center mb-12">
           <h2 class="text-4xl font-bold text-gray-800 mb-3 flex items-center justify-center">
             <span class="w-24 h-0.5 bg-gray-800 mr-4"></span>
-            为您解决<span class="text-red-500">8</span>大难题
+            {{ t('highTech.problems.title') }}<span class="text-red-500">{{ t('highTech.problems.titleHighlight') }}</span>{{ t('highTech.problems.titleSuffix') }}
             <span class="w-24 h-0.5 bg-gray-800 ml-4"></span>
           </h2>
-          <p class="text-gray-600">长沙悦安通过合理措施提升高新认证通过率</p>
+          <p class="text-gray-600">{{ t('highTech.problems.subtitle') }}</p>
         </div>
 
         <div class="relative max-w-6xl mx-auto">
@@ -191,7 +191,7 @@
           <div class="grid grid-cols-3 gap-8 max-w-7xl mx-auto items-center" style="margin-top: -180px;">
             <!-- 左侧4个 -->
             <div class="space-y-8 text-right">
-              <div v-for="(problem, index) in eightProblems.slice(0, 4)" :key="index" class="flex items-center justify-end gap-4">
+              <div v-for="(problem, index) in currentProblems.slice(0, 4)" :key="index" class="flex items-center justify-end gap-4">
                 <p class="text-gray-800 text-lg font-medium">{{ problem }}</p>
                 <span class="text-3xl font-bold text-gray-800 flex-shrink-0">{{ String(index + 1).padStart(2, '0') }}</span>
               </div>
@@ -208,7 +208,7 @@
             
             <!-- 右侧4个 -->
             <div class="space-y-8">
-              <div v-for="(problem, index) in eightProblems.slice(4, 8)" :key="index + 4" class="flex items-center gap-4">
+              <div v-for="(problem, index) in currentProblems.slice(4, 8)" :key="index + 4" class="flex items-center gap-4">
                 <span class="text-3xl font-bold text-gray-800 flex-shrink-0">{{ String(index + 5).padStart(2, '0') }}</span>
                 <p class="text-gray-800 text-lg font-medium">{{ problem }}</p>
               </div>
@@ -218,11 +218,11 @@
 
         <div class="flex justify-center gap-6 mt-16">
           <button class="px-16 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white text-lg font-bold rounded-full hover:from-orange-600 hover:to-red-600 transition-all duration-300 shadow-lg">
-            高新申请咨询 >>
+            {{ t('highTech.problems.consultBtn') }}
           </button>
-          <a href="tel:400-872-8735" class="px-16 py-4 bg-cyan-400 text-white text-lg font-bold rounded-full hover:bg-cyan-500 transition-all duration-300 flex items-center shadow-lg">
+          <a :href="`tel:${t('highTech.banner.phone')}`" class="px-16 py-4 bg-cyan-400 text-white text-lg font-bold rounded-full hover:bg-cyan-500 transition-all duration-300 flex items-center shadow-lg">
             <i class="fas fa-phone-alt mr-3"></i>
-            400-872-8735
+            {{ t('highTech.banner.phone') }}
           </a>
         </div>
       </div>
@@ -234,13 +234,13 @@
         <div class="text-center mb-12">
           <h2 class="text-4xl font-bold text-gray-800 mb-3 flex items-center justify-center">
             <span class="w-24 h-0.5 bg-gray-800 mr-4"></span>
-            高新企业值得尽早申请
+            {{ t('highTech.benefits.title') }}
             <span class="w-24 h-0.5 bg-gray-800 ml-4"></span>
           </h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <article v-for="benefit in earlyBenefits" :key="benefit.title" class="bg-white rounded-lg p-8 text-center hover:shadow-xl transition-all duration-300">
+          <article v-for="benefit in currentBenefits" :key="benefit.title" class="bg-white rounded-lg p-8 text-center hover:shadow-xl transition-all duration-300">
             <div class="w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center text-white text-3xl" :style="{ backgroundColor: benefit.color }">
               {{ benefit.icon }}
             </div>
@@ -251,11 +251,11 @@
 
         <div class="flex justify-center gap-6 mt-16">
           <button class="px-16 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white text-lg font-bold rounded-full hover:from-orange-600 hover:to-red-600 transition-all duration-300 shadow-lg">
-            立即咨询 >>
+            {{ t('highTech.benefits.consultBtn') }}
           </button>
-          <a href="tel:400-872-8735" class="px-16 py-4 bg-cyan-400 text-white text-lg font-bold rounded-full hover:bg-cyan-500 transition-all duration-300 flex items-center shadow-lg">
+          <a :href="`tel:${t('highTech.banner.phone')}`" class="px-16 py-4 bg-cyan-400 text-white text-lg font-bold rounded-full hover:bg-cyan-500 transition-all duration-300 flex items-center shadow-lg">
             <i class="fas fa-phone-alt mr-3"></i>
-            <u>400-872-8735</u>
+            <u>{{ t('highTech.banner.phone') }}</u>
           </a>
         </div>
       </div>
@@ -268,7 +268,10 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t, locale } = useI18n()
 
 // 高新认证相关服务数据
 const relatedServices = ref([
@@ -286,7 +289,7 @@ const relatedServices = ref([
   },
   {
     title: '"小巨人"认定',
-    desc: '专精特新“小巨人”企业认定需同时满足专业化标准、精细化标准、特色化标准、创新能力标准、产业链配套标准、主导产品所属领域标准。'
+    desc: '专精特新"小巨人"企业认定需同时满足专业化标准、精细化标准、特色化标准、创新能力标准、产业链配套标准、主导产品所属领域标准。'
   },
   {
     title: '高新复审',
@@ -306,6 +309,47 @@ const relatedServices = ref([
   }
 ])
 
+// 根据当前语言获取服务数据
+const currentServices = computed(() => {
+  if (locale.value === 'en-US') {
+    return [
+      {
+        title: 'Guaranteed High-Tech Enterprise Certification',
+        desc: 'Full refund if not certified. Changsha Yuean provides professional services with years of experience to help clients become national high-tech enterprises.'
+      },
+      {
+        title: 'Patent & Software Copyright System',
+        desc: 'Assist enterprises in planning and building patent and software copyright intellectual property systems to meet certification requirements quickly.'
+      },
+      {
+        title: 'Specialized & Innovative SME Certification',
+        desc: 'For enterprises with annual revenue over 10 million yuan. Changsha Yuean provides specialized certification services, full support, refund if not passed.'
+      },
+      {
+        title: '"Little Giant" Certification',
+        desc: 'Specialized and innovative "Little Giant" enterprise certification requires meeting standards for specialization, refinement, innovation capability, industrial chain support, and product field.'
+      },
+      {
+        title: 'High-Tech Re-evaluation',
+        desc: 'Enterprise high-tech certification is valid for three years. Changsha Yuean is proficient in enterprise service policies to ensure smooth re-evaluation.'
+      },
+      {
+        title: 'High-Tech Enterprise Subsidies',
+        desc: 'Full assistance in applying for subsidies including specialized and innovative, SME, and expansion-related subsidies.'
+      },
+      {
+        title: 'Key Little Giant/Single Champion',
+        desc: 'For core products in specialized systems. Changsha Yuean assists in market analysis, demonstrating enterprise innovation leadership to obtain certification.'
+      },
+      {
+        title: 'Scientific Achievement Evaluation',
+        desc: 'Evaluation reports help enterprises understand the advancement potential of scientific achievements, promote technology transformation, and apply for national science and technology awards.'
+      }
+    ]
+  }
+  return relatedServices.value
+})
+
 // 高新申请条件数据
 const applicationConditions = ref([
   '企业申请认定时领注册成立一年以上',
@@ -315,6 +359,20 @@ const applicationConditions = ref([
   '近一年高新技术产品（服务）收入占企业同期总收入的比例',
   '企业近三个会计年度的研究开发费用总额占同期销售收入总额的比例符合要求'
 ])
+
+const currentConditions = computed(() => {
+  if (locale.value === 'en-US') {
+    return [
+      'Enterprise must be registered for at least one year',
+      'Intellectual property requirements for the past 3 years',
+      'Proportion of R&D personnel to total employees',
+      'No major legal violations',
+      'Proportion of high-tech product (service) revenue to total revenue',
+      'R&D expenses meet the required proportion of total sales revenue over three fiscal years'
+    ]
+  }
+  return applicationConditions.value
+})
 
 // 补贴项目数据
 const subsidyPrograms = ref([
@@ -371,6 +429,65 @@ const subsidyPrograms = ref([
   }
 ])
 
+const currentSubsidies = computed(() => {
+  if (locale.value === 'en-US') {
+    return [
+      {
+        icon: '奖',
+        color: '#06b6d4',
+        title: 'National High-Tech Subsidy',
+        badge: 'trophy',
+        conditions: [
+          'Certified high-tech enterprise',
+          'Amounts vary by district',
+          'Apply at district/county level'
+        ],
+        amount: '100k-500k'
+      },
+      {
+        icon: '励',
+        color: '#10b981',
+        title: 'SME Subsidy (Golden Seed)',
+        badge: 'doc',
+        conditions: [
+          'R&D expenses over 1 million',
+          '6 major high-tech industries',
+          'Certified sci-tech enterprise/SME',
+          'Revenue under 20 million',
+          'Under 100 employees'
+        ],
+        amount: '20k-200k'
+      },
+      {
+        icon: '补',
+        color: '#06b6d4',
+        title: 'Foundation Expansion/Growth Program',
+        badge: 'hand',
+        conditions: [
+          'Meets city positioning standards',
+          '6 major high-tech industries',
+          'High-tech revenue, R&D, industrial chain subsidies',
+          'Certified high-tech enterprise'
+        ],
+        amount: '50k-100k'
+      },
+      {
+        icon: '贴',
+        color: '#f59e0b',
+        title: 'Specialized & Innovative Subsidy',
+        badge: 'calendar',
+        conditions: [
+          'Certified specialized SME',
+          'Little Giant enterprise',
+          'Varies by district, dual certification bonus'
+        ],
+        amount: '100k-800k'
+      }
+    ]
+  }
+  return subsidyPrograms.value
+})
+
 // 8大难题数据
 const eightProblems = ref([
   '企业核心知识产权架构布局',
@@ -382,6 +499,22 @@ const eightProblems = ref([
   '专家带队高效应对抽查核查',
   '高效认定国家高新技术企业'
 ])
+
+const currentProblems = computed(() => {
+  if (locale.value === 'en-US') {
+    return [
+      'Core intellectual property architecture planning',
+      'Scientific achievement transformation compliance',
+      'R&D organization management standards',
+      'Financial growth indicators improvement',
+      'R&D expense auxiliary accounting by project',
+      'R&D expense additional deduction benefits',
+      'Expert team for audit and review support',
+      'Efficient national high-tech enterprise certification'
+    ]
+  }
+  return eightProblems.value
+})
 
 // 高新企业值得尽早申请数据
 const earlyBenefits = ref([
@@ -424,7 +557,7 @@ const earlyBenefits = ref([
   {
     icon: '国',
     color: '#ff6b35',
-    title: '唯一“国”字头企业资质',
+    title: '唯一"国"字头企业资质',
     desc: ''
   },
   {
@@ -440,4 +573,21 @@ const earlyBenefits = ref([
     desc: ''
   }
 ])
+
+const currentBenefits = computed(() => {
+  if (locale.value === 'en-US') {
+    return [
+      { icon: '税', color: '#ff6b35', title: '10% corporate income tax reduction (15% rate)', desc: '' },
+      { icon: '扣', color: '#06b6d4', title: '175-200% R&D expense cost inclusion and additional deduction', desc: '' },
+      { icon: '才', color: '#ff6b35', title: 'Help attract high-end talent', desc: '' },
+      { icon: '资', color: '#06b6d4', title: 'Easier access to bank and VC financing', desc: '' },
+      { icon: '奖', color: '#ff6b35', title: 'Regional cash reward policies', desc: '' },
+      { icon: '降', color: '#06b6d4', title: 'Accelerated depreciation of fixed assets, reduced tax burden', desc: '' },
+      { icon: '国', color: '#ff6b35', title: 'Only national-level enterprise qualification', desc: '' },
+      { icon: '加', color: '#06b6d4', title: 'Bonus points in major project bidding', desc: '' },
+      { icon: '引', color: '#ff6b35', title: 'Enhanced brand strength to attract investment', desc: '' }
+    ]
+  }
+  return earlyBenefits.value
+})
 </script>
