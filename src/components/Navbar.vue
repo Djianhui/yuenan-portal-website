@@ -6,7 +6,7 @@
         <div class="flex-shrink-0 mr-6 lg:mr-8 xl:mr-12">
           <router-link to="/" class="flex items-center">
             <i class="fas fa-shield-alt text-blue-600 text-3xl mr-2"></i>
-            <span class="text-2xl font-bold text-gray-800">长沙<span class="text-blue-600">悦安</span></span>
+            <span class="text-2xl font-bold text-gray-800">Yuean<span class="text-blue-600">Tech</span></span>
           </router-link>
         </div>
         

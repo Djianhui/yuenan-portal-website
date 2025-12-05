@@ -2,8 +2,8 @@
 export default {
   common: {
     phone: '400-671-3086',
-    company: 'Changsha Yuean',
-    fullCompany: 'Changsha Yuean Intellectual Property Service Co., Ltd.',
+    company: 'Yuean Tech',
+    fullCompany: 'Yuean Tech Intellectual Property Service Co., Ltd.',
     consult: 'Free Consultation',
     consultNow: 'Consult Now >>',
     callUs: 'Call Us',
@@ -43,12 +43,12 @@ export default {
     },
     services: {
       title: 'High-Tech Certification Services',
-      subtitle: 'High-tech related services, Changsha Yuean provides comprehensive support',
+      subtitle: 'High-tech related services, Yuean Tech provides comprehensive support',
       consultBtn: 'Consult Customer Service',
       items: [
         {
           title: 'Guaranteed High-Tech Enterprise Certification',
-          desc: 'Full refund if not certified. Changsha Yuean provides professional services with years of experience to help clients become national high-tech enterprises.'
+          desc: 'Full refund if not certified. Yuean Tech provides professional services with years of experience to help clients become national high-tech enterprises.'
         },
         {
           title: 'Patent & Software Copyright System',
@@ -56,7 +56,7 @@ export default {
         },
         {
           title: 'Specialized & Innovative SME Certification',
-          desc: 'For enterprises with annual revenue over 10 million yuan. Changsha Yuean provides specialized certification services, full support, refund if not passed.'
+          desc: 'For enterprises with annual revenue over 10 million yuan. Yuean Tech provides specialized certification services, full support, refund if not passed.'
         },
         {
           title: '"Little Giant" Certification',
@@ -64,7 +64,7 @@ export default {
         },
         {
           title: 'High-Tech Re-evaluation',
-          desc: 'Enterprise high-tech certification is valid for three years. Changsha Yuean is proficient in enterprise service policies to ensure smooth re-evaluation.'
+          desc: 'Enterprise high-tech certification is valid for three years. Yuean Tech is proficient in enterprise service policies to ensure smooth re-evaluation.'
         },
         {
           title: 'High-Tech Enterprise Subsidies',
@@ -72,7 +72,7 @@ export default {
         },
         {
           title: 'Key Little Giant/Single Champion',
-          desc: 'For core products in specialized systems. Changsha Yuean assists in market analysis, demonstrating enterprise innovation leadership to obtain certification.'
+          desc: 'For core products in specialized systems. Yuean Tech assists in market analysis, demonstrating enterprise innovation leadership to obtain certification.'
         },
         {
           title: 'Scientific Achievement Evaluation',
@@ -144,7 +144,7 @@ export default {
       title: 'Solving',
       titleHighlight: '8',
       titleSuffix: 'Major Challenges',
-      subtitle: 'Changsha Yuean improves high-tech certification pass rate through effective measures',
+      subtitle: 'Yuean Tech improves high-tech certification pass rate through effective measures',
       consultBtn: 'Consult High-Tech Application >>',
       items: [
         'Core intellectual property architecture planning',
@@ -499,7 +499,7 @@ export default {
         'Green Channel Approval',
         'Full Refund if Not Approved'
       ],
-      highlight: 'Changsha Yuean has been serving hundreds of thousands of enterprises for years',
+      highlight: 'Yuean Tech has been serving hundreds of thousands of enterprises for years',
       advantages: [
         '1-on-1 Service',
         'Complete Contracts & Invoices',
@@ -658,7 +658,7 @@ export default {
       ]
     },
     guarantee: {
-      title: 'Changsha Yuean | Service Guarantee',
+      title: 'Yuean Tech | Service Guarantee',
       items: [
         {
           title: 'Senior Consultants 1-on-1',
@@ -691,7 +691,7 @@ export default {
     },
     services: {
       title: 'Specialized & Innovative Services',
-      subtitle: 'Changsha Yuean provides comprehensive support, full process handling, refund if not passed',
+      subtitle: 'Yuean Tech provides comprehensive support, full process handling, refund if not passed',
       consultBtn: 'Consult Now',
       phone: '400-872-8735',
       items: [
@@ -872,7 +872,12 @@ export default {
     },
     problems: {
       title: 'We Solve 8 Major Challenges for You',
-      consultBtn: 'Consult Now >>'
+      consultBtn: 'Consult Now >>',
+      centerText: 'Specialized & Innovative Certification',
+      label1: 'Intellectual Property',
+      label2: 'Rewards & Subsidies',
+      label3: 'Bonus Points',
+      label4: 'Early Cultivation'
     }
   },
 

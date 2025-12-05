@@ -872,7 +872,12 @@ export default {
     },
     problems: {
       title: '我们将为您解决8大难题',
-      consultBtn: '立即咨询 >>'
+      consultBtn: '立即咨询 >>',
+      centerText: '专精特新认证',
+      label1: '知识产权',
+      label2: '奖励补贴',
+      label3: '加分项',
+      label4: '提前培育'
     }
   },
 

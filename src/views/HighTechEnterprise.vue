@@ -433,7 +433,7 @@ const currentSubsidies = computed(() => {
   if (locale.value === 'en-US') {
     return [
       {
-        icon: '奖',
+        icon: 'A',
         color: '#06b6d4',
         title: 'National High-Tech Subsidy',
         badge: 'trophy',
@@ -445,7 +445,7 @@ const currentSubsidies = computed(() => {
         amount: '100k-500k'
       },
       {
-        icon: '励',
+        icon: 'R',
         color: '#10b981',
         title: 'SME Subsidy (Golden Seed)',
         badge: 'doc',
@@ -459,7 +459,7 @@ const currentSubsidies = computed(() => {
         amount: '20k-200k'
       },
       {
-        icon: '补',
+        icon: 'S',
         color: '#06b6d4',
         title: 'Foundation Expansion/Growth Program',
         badge: 'hand',
@@ -472,7 +472,7 @@ const currentSubsidies = computed(() => {
         amount: '50k-100k'
       },
       {
-        icon: '贴',
+        icon: 'B',
         color: '#f59e0b',
         title: 'Specialized & Innovative Subsidy',
         badge: 'calendar',
@@ -577,15 +577,15 @@ const earlyBenefits = ref([
 const currentBenefits = computed(() => {
   if (locale.value === 'en-US') {
     return [
-      { icon: '税', color: '#ff6b35', title: '10% corporate income tax reduction (15% rate)', desc: '' },
-      { icon: '扣', color: '#06b6d4', title: '175-200% R&D expense cost inclusion and additional deduction', desc: '' },
-      { icon: '才', color: '#ff6b35', title: 'Help attract high-end talent', desc: '' },
-      { icon: '资', color: '#06b6d4', title: 'Easier access to bank and VC financing', desc: '' },
-      { icon: '奖', color: '#ff6b35', title: 'Regional cash reward policies', desc: '' },
-      { icon: '降', color: '#06b6d4', title: 'Accelerated depreciation of fixed assets, reduced tax burden', desc: '' },
-      { icon: '国', color: '#ff6b35', title: 'Only national-level enterprise qualification', desc: '' },
-      { icon: '加', color: '#06b6d4', title: 'Bonus points in major project bidding', desc: '' },
-      { icon: '引', color: '#ff6b35', title: 'Enhanced brand strength to attract investment', desc: '' }
+      { icon: 'T', color: '#ff6b35', title: '10% corporate income tax reduction (15% rate)', desc: '' },
+      { icon: 'D', color: '#06b6d4', title: '175-200% R&D expense cost inclusion and additional deduction', desc: '' },
+      { icon: 'H', color: '#ff6b35', title: 'Help attract high-end talent', desc: '' },
+      { icon: 'F', color: '#06b6d4', title: 'Easier access to bank and VC financing', desc: '' },
+      { icon: 'R', color: '#ff6b35', title: 'Regional cash reward policies', desc: '' },
+      { icon: 'A', color: '#06b6d4', title: 'Accelerated depreciation of fixed assets, reduced tax burden', desc: '' },
+      { icon: 'N', color: '#ff6b35', title: 'Only national-level enterprise qualification', desc: '' },
+      { icon: 'B', color: '#06b6d4', title: 'Bonus points in major project bidding', desc: '' },
+      { icon: 'E', color: '#ff6b35', title: 'Enhanced brand strength to attract investment', desc: '' }
     ]
   }
   return earlyBenefits.value

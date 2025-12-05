@@ -223,14 +223,14 @@
             
             <!-- 中心文字 -->
             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-              <div class="text-white text-3xl font-bold">专精特新认证</div>
+              <div class="text-white text-3xl font-bold">{{ t('specialized.problems.centerText') }}</div>
             </div>
 
             <!-- 四个标签 -->
-            <div class="absolute top-12 left-1/2 transform -translate-x-1/2 text-cyan-400 text-lg font-bold">知识产权</div>
-            <div class="absolute bottom-20 left-12 text-cyan-400 text-lg font-bold">奖励补贴</div>
-            <div class="absolute top-1/2 left-8 transform -translate-y-1/2 text-cyan-400 text-lg font-bold">加分项</div>
-            <div class="absolute top-1/2 right-8 transform -translate-y-1/2 text-cyan-400 text-lg font-bold">提前培育</div>
+            <div class="absolute top-12 left-1/2 transform -translate-x-1/2 text-cyan-400 text-lg font-bold">{{ t('specialized.problems.label1') }}</div>
+            <div class="absolute bottom-20 left-12 text-cyan-400 text-lg font-bold">{{ t('specialized.problems.label2') }}</div>
+            <div class="absolute top-1/2 left-8 transform -translate-y-1/2 text-cyan-400 text-lg font-bold">{{ t('specialized.problems.label3') }}</div>
+            <div class="absolute top-1/2 right-8 transform -translate-y-1/2 text-cyan-400 text-lg font-bold">{{ t('specialized.problems.label4') }}</div>
 
             <!-- 8个圆点 -->
             <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white rounded-full"></div>
